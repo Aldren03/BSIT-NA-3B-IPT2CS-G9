@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Aldbackground.jpg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .card {
+    
+    background: #d5b7a9;
+    width: 600px;
+    height: 500px;
+    position: relative;
+}
+img {
+    border-radius: 50%;
+    width: 140px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #7a86b6;
+}
+.profiletitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.cardbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.line {
+    width: 3px;
+    height: 50px;
+    background-color: black;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+i {
+    font-size: 30px;
+}
+.fa-facebook {
+    color: #0f91f3;
+}
+.fa-paper-plane {
+    color: #0f91f3;
+}
+.popup .overlay {
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 7);
+    z-index: 1;
+    display: none;
+}
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #5b6c99;
+    width: 300px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    font-weight: 200px;
+}
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 70%;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+.btn-print {
+    outline: none;
+    border-radius: 50%;
+}
+.btn-print :hover {
+    background: #eeee;
+}
